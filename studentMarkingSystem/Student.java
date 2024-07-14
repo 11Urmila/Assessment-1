@@ -51,6 +51,22 @@ public class Student
         //Display minimum and maximum mark among 30 students
         System.out.println("Minimum mark: " + minimumMark);
         System.out.println("Maximum mark: " + maximumMark);
+        // Calculate and print mean and standard deviation
+        double sum = 0;
+        for (int mark : marksArray) {
+            sum += mark;
+        }
+        double mean = sum / marksArray.size();
+
+        double sumOfSquares = 0;
+        for (int mark : marksArray) {
+            sumOfSquares += Math.pow(mark - mean, 2);
+        }
+        double variance = sumOfSquares / marksArray.size();
+        double standardDeviation = Math.sqrt(variance);
+
+        System.out.println("Mean: " + mean);
+        System.out.println("Standard Deviation: " + standardDeviation);
 
 
     }
