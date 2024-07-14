@@ -17,5 +17,21 @@ public class Student
         // Allow the user to enter the assignment name
         System.out.print("Please enter the assignment name: ");
         String nameOfAssignment = scanner.nextLine();
+         // Allow the user to enter marks for 30 students 
+        for (int i = 1; i <= 30; i++) {
+            int studentMark;
+            while (true) {
+                System.out.print("Please enter mark for student " + i + ": ");
+                studentMark = scanner.nextInt();
+                //Validate student mark between 0 and 30
+                if (studentMark >= 0 && studentMark <= 30) {
+                   marksArray.add(studentMark);
+                    break;
+                } else {
+                    System.out.println("Invalid mark. Please enter a mark between 0 and 30.");
+                }
+            }
+        }
+
     }
 }
