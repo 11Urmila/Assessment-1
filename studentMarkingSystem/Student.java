@@ -32,6 +32,9 @@ public class Student
                 }
             }
         }
+        // Display Assignment name and marks
+        System.out.println("Assignment: " + nameOfAssignment);
+        System.out.println("Marks: " + marksArray);
 
     }
 }
