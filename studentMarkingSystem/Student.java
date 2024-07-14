@@ -36,5 +36,22 @@ public class Student
         System.out.println("Assignment: " + nameOfAssignment);
         System.out.println("Marks: " + marksArray);
 
+        // Declare variables to store maximum and minimum mark
+        int minimumMark = Integer.MAX_VALUE;
+        int maximumMark = Integer.MIN_VALUE;
+        //Using this for loop calculate the minimum and maximum mark
+        for (int mark : marksArray) {
+            if (mark < minimumMark) {
+                minimumMark = mark;
+            }
+            if (mark > maximumMark) {
+                maximumMark = mark;
+            }
+        }
+        //Display minimum and maximum mark among 30 students
+        System.out.println("Minimum mark: " + minimumMark);
+        System.out.println("Maximum mark: " + maximumMark);
+
+
     }
 }
