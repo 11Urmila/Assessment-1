@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 /**
  * Write a description of class Student here.
- *
+ * This Student class contain one main method which calculate the mean and standard deviation of students entered by the user
  * @author Urmila 
- * @version (a version number or a date)
+ * @version Updated 
  */
 public class Student
 {
@@ -63,7 +63,6 @@ public class Student
         }
         double variance = sumOfSquares / marksArray.size();
         double standardDeviation = Math.sqrt(variance);
-
         System.out.println("Mean: " + mean);
         System.out.println("Standard Deviation: " + standardDeviation);
 
