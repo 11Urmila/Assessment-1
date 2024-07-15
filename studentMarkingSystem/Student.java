@@ -37,8 +37,8 @@ public class Student
         System.out.println("Marks: " + marksArray);
 
         // Declare variables to store maximum and minimum mark
-        int minimumMark = Integer.MAX_VALUE;
-        int maximumMark = Integer.MIN_VALUE;
+        int minimumMark =30;
+        int maximumMark=0;
         //Using this for loop calculate the minimum and maximum mark
         for (int mark : marksArray) {
             if (mark < minimumMark) {
@@ -57,7 +57,7 @@ public class Student
             sum += mark;
         }
         double mean = sum / marksArray.size();
-
+        double power =0;
         double sumOfSquares = 0;
         for (int mark : marksArray) {
             sumOfSquares += Math.pow(mark - mean, 2);
