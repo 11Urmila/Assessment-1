@@ -57,10 +57,9 @@ public class Student
             sum += mark;
         }
         double mean = sum / marksArray.size();
-        double power =0;
         double sumOfSquares = 0;
         for (int mark : marksArray) {
-            sumOfSquares += Math.pow(mark - mean, 2);
+             sumOfSquares += (mark - mean) * (mark - mean);
         }
         double variance = sumOfSquares / marksArray.size();
         double standardDeviation = Math.sqrt(variance);
