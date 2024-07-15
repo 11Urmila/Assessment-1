@@ -3,4 +3,6 @@ comment0.target=Student
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Student\ here.\r\n\ This\ Student\ class\ contain\ one\ main\ method\ which\ calculate\ the\ mean\ and\ standard\ deviation\ of\ students\ entered\ by\ the\ user\r\n\ @author\ Urmila\ \r\n\ @version\ Updated\ \r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment2.params=num
+comment2.target=double\ calcSQRT(double)
+numComments=3

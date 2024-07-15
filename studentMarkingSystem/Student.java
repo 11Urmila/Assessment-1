@@ -62,10 +62,17 @@ public class Student
              sumOfSquares += (mark - mean) * (mark - mean);
         }
         double variance = sumOfSquares / marksArray.size();
-        double standardDeviation = Math.sqrt(variance);
+        double standardDeviation = calcSQRT(variance);
         System.out.println("Mean: " + mean);
         System.out.println("Standard Deviation: " + standardDeviation);
-
-
+    }
+     // calculate the square root using the long division method
+    public static double calcSQRT(double num) {
+        double precision = 0.00001; // Precision level
+        double guess = num;
+        while ((guess - num / guess) > precision) {
+            guess = (guess + num / guess) / 2;
+        }
+        return guess;
     }
 }
